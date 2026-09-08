@@ -58,9 +58,3 @@ Pega todo el código del script en la consola y presiona **Enter**.
 
 ### 8. Comenzar a usar OmeTV-Geolocalizer
 Una vez conectado con otro usuario, el panel flotante mostrará automáticamente la información disponible y la captura de video.
-
----
-
-## Descargo de Responsabilidad
-
-Este proyecto ha sido desarrollado exclusivamente con fines educativos y de investigación en seguridad. Úsalo con responsabilidad y respetando las leyes locales y términos del servicio.
