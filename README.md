@@ -1,66 +1,66 @@
 # OmeTV-Geolocalizer
 
-Real-time WebRTC IP & location lookup overlay for OmeTV.
+Panel flotante para la obtención de IP, geolocalización y captura en tiempo real mediante WebRTC para OmeTV.
 
 ---
 
-## Features
+## Características
 
-- **WebRTC Interception:** Intercepts ICE candidates (`srflx`) to extract the peer's public IP address in real time.
-- **Geolocation & Network Info:** Displays country, region, city, ISP, language, timezone, and precise coordinates with one-click copy.
-- **Auto Video Snapshot:** Captures a centered snapshot directly from the remote video stream when connected.
-- **Draggable & Minimizable HUD:** Modern, dark-themed floating panel that can be repositioned or collapsed.
-- **Local Simulator:** Includes an offline HTML simulator to test UI and mock connections without accessing OmeTV.
+- **Interceptación WebRTC:** Intercepta candidatos ICE (`srflx`) para extraer la dirección IP pública del interlocutor en tiempo real.
+- **Geolocalización y datos de red:** Muestra país, región, ciudad, proveedor de internet (ISP), idiomas, zona horaria y coordenadas geográficas con botón de copiado rápido.
+- **Captura automática de video:** Extrae un fotograma centrado directamente del flujo de video remoto al conectarse.
+- **Panel flotante interactivo:** Interfaz oscura, arrastrable por la pantalla y minimizable.
+- **Simulador local:** Incluye un entorno de prueba para simular conexiones e interfaces sin necesidad de ingresar a OmeTV.
 
 ---
 
-## Setup Guide
+## Guía de Configuración
 
-### 1. Create an IPGeolocation account
-Visit [https://ipgeolocation.io/](https://ipgeolocation.io/) and create a free account.
+### 1. Crear una cuenta en IPGeolocation
+Ingresa a [https://ipgeolocation.io/](https://ipgeolocation.io/) y crea una cuenta gratuita.
 
-### 2. Copy your API key
-After signing in, open your dashboard and copy your API key.
+### 2. Copiar tu clave API
+Inicia sesión, accede a tu panel de control (Dashboard) y copia tu clave API.
 
-### 3. Configure the script
-Open `ometv_console_snippet.js` and replace:
+### 3. Configurar el script
+Abre el archivo `ometv_console_snippet.js` y reemplaza:
 
 ```javascript
 let apiKey = "";
 ```
 
-with:
+por:
 
 ```javascript
-let apiKey = "YOUR_API_KEY";
+let apiKey = "TU_API_KEY";
 ```
 
-### 4. Open OmeTV
-Go to [https://ome.tv/](https://ome.tv/) and sign in.
+### 4. Abrir OmeTV
+Ve a [https://ome.tv/](https://ome.tv/) e inicia sesión.
 
-### 5. Open Developer Tools
-Press `F12` or `Ctrl + Shift + I`.
+### 5. Abrir las Herramientas de Desarrollador
+Presiona `F12` o la combinación `Ctrl + Shift + I`.
 
-### 6. Open the Console
-Select the **Console** tab.
+### 6. Abrir la Consola
+Selecciona la pestaña **Console**.
 
-If Chrome displays:
+Si el navegador muestra el aviso de seguridad:
 > Warning: Don't paste code into the DevTools Console...
 
-type:
+escribe:
 ```text
 allow pasting
 ```
-and press **Enter**.
+y presiona **Enter**.
 
-### 7. Run the script
-Paste the entire script into the Console and press **Enter**.
+### 7. Ejecutar el script
+Pega todo el código del script en la consola y presiona **Enter**.
 
-### 8. Start using OmeTV Uncover
-Once connected to another user, the floating panel will automatically display the available information.
+### 8. Comenzar a usar OmeTV-Geolocalizer
+Una vez conectado con otro usuario, el panel flotante mostrará automáticamente la información disponible y la captura de video.
 
 ---
 
-## Disclaimer
+## Descargo de Responsabilidad
 
-This project is created for educational and security testing purposes only. Use responsibly and in accordance with local regulations and terms of service.
+Este proyecto ha sido desarrollado exclusivamente con fines educativos y de investigación en seguridad. Úsalo con responsabilidad y respetando las leyes locales y términos del servicio.
